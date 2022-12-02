@@ -1,0 +1,26 @@
+name: Reusable Workflow
+
+on:
+  workflow_call:
+
+jobs:
+
+  ru2-job1:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Write something to log
+        run: |
+          echo "I am Reuseable Workflow - running from calledRepo main branch"
+
+      - name: Run a bash script
+        run: |
+          echo "Calling the build script"
+
+        run: ./.github/scripts/build.sh
+        shell: bash
+        
