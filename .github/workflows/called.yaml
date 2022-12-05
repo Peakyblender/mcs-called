@@ -16,7 +16,16 @@ jobs:
       - name: Write something to log
         run: |
           echo "I am Reuseable Workflow - running from calledRepo main branch"
-
+          
+      - name: Write something to log
+        run: echo "Current working directory"
+             pwd
+             id
+             
+      - name: Write something to log
+        run: echo "Change Permission"
+          chmod 777 ./scripts/build.sh
+          
       - name: Run a bash script
         run: |
           echo "Calling the build script"
