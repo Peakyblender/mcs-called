@@ -21,7 +21,9 @@ jobs:
         run: |
              pwd
              id
-             cd /home/runner/work/mcs-called
-             chmod 777 ./scripts/build.sh
-             sh ./scripts/build.sh
+             docker ps
+             ls -al /home/runner/work/
+             #cd /home/runner/work/mcs-called
+             #chmod 777 ./scripts/build.sh
+             #sh ./scripts/build.sh
         
