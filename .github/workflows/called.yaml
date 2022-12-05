@@ -20,6 +20,6 @@ jobs:
       - name: Run a bash script
         run: |
           echo "Calling the build script"
-          ${GITHUB_WORKSPACE}/.github/scripts/build.sh
+          Peakyblender/mcs-called/.github/scripts/build.sh
         shell: bash
         
