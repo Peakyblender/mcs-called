@@ -21,11 +21,7 @@ jobs:
         run: |
              pwd
              id
-             
-      - name: Change permission
-        run: chmod 777 ./scripts/build.sh
-          
-      - name: Run a bash script
-        run: sh ./scripts/build.sh
-        shell: bash
+             cd /home/runner/work/mcs-called
+             chmod 777 ./scripts/build.sh
+             sh ./scripts/build.sh
         
