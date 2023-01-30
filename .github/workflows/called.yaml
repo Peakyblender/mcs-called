@@ -14,7 +14,7 @@ jobs:
 
       - name: Write something to log
         run: |
-          echo "I am Reuseable Workflow - running from calledRepo main branch"
+          echo "This is the workflow which is being called"
           
       - name: Check cwd
         run: |
